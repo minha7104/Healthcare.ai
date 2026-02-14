@@ -1,16 +1,58 @@
-# React + Vite
+# AI-Driven Smart Healthcare Companion
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A smart healthcare web application that integrates AI-powered diagnostics,
+health record management, and personalized wellness recommendations.
 
-Currently, two official plugins are available:
+This project is being developed as an **internship project** and will
+progressively integrate AI/ML capabilities.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Project Status
+**In Development**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Vision
+To build a digital healthcare companion that enables:
+- Secure health record storage
+- AI-assisted early disease risk insights
+- Personalized wellness guidance
+- Better patient engagement
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Tech Stack
+
+### Frontend
+- React.js
+- Vite
+- JavaScript
+- CSS
+
+### Backend (Planned)
+- FastAPI (Python)
+
+### AI / ML (Planned)
+- Disease risk prediction models
+- NLP for health record analysis
+
+### Database (Planned)
+- PostgreSQL / MongoDB
+
+---
+
+## ✅ Current Progress
+- React frontend scaffolded using Vite
+- Basic layout with sidebar navigation
+- Health records UI (upload & list)
+- Git repository initialized
+
+---
+
+## 🔜 Planned Features
+- Health record upload & management
+- AI-powered disease prediction
+- Wellness dashboard
+- Authentication & security
+- AI health assistant chatbot
