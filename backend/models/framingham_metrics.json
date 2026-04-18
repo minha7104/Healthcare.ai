@@ -1,0 +1,254 @@
+{
+  "best_config": {
+    "name": "high_recall_bias",
+    "hidden1": 64,
+    "hidden2": 16,
+    "dropout": 0.25,
+    "lr": 0.0007,
+    "epochs": 260,
+    "batch_size": 48,
+    "pos_weight_scale": 1.3,
+    "weight_decay": 0.0001,
+    "patience": 40
+  },
+  "nn_metrics": {
+    "roc_auc": 0.707960021994372,
+    "precision": 0.1552346570397112,
+    "recall": 1.0,
+    "f1": 0.26875,
+    "confusion_matrix": [
+      [
+        17,
+        702
+      ],
+      [
+        0,
+        129
+      ]
+    ],
+    "decision_threshold": 0.33999999999999997
+  },
+  "baseline_metrics": {
+    "roc_auc": 0.6989358605298056,
+    "precision": 0.16895604395604397,
+    "recall": 0.9534883720930233,
+    "f1": 0.2870478413068845,
+    "confusion_matrix": [
+      [
+        114,
+        605
+      ],
+      [
+        6,
+        123
+      ]
+    ],
+    "decision_threshold": 0.2
+  },
+  "experiment_results": [
+    {
+      "config": "base_32_16",
+      "metrics": {
+        "roc_auc": 0.6862459703938502,
+        "precision": 0.1524822695035461,
+        "recall": 1.0,
+        "f1": 0.26461538461538464,
+        "confusion_matrix": [
+          [
+            2,
+            717
+          ],
+          [
+            0,
+            129
+          ]
+        ],
+        "decision_threshold": 0.29999999999999993
+      }
+    },
+    {
+      "config": "improved_64_32",
+      "metrics": {
+        "roc_auc": 0.7054155750342314,
+        "precision": 0.18949044585987262,
+        "recall": 0.9224806201550387,
+        "f1": 0.3143989431968296,
+        "confusion_matrix": [
+          [
+            210,
+            509
+          ],
+          [
+            10,
+            119
+          ]
+        ],
+        "decision_threshold": 0.24
+      }
+    },
+    {
+      "config": "high_recall_bias",
+      "metrics": {
+        "roc_auc": 0.707960021994372,
+        "precision": 0.1552346570397112,
+        "recall": 1.0,
+        "f1": 0.26875,
+        "confusion_matrix": [
+          [
+            17,
+            702
+          ],
+          [
+            0,
+            129
+          ]
+        ],
+        "decision_threshold": 0.33999999999999997
+      }
+    },
+    {
+      "config": "deep_128_64",
+      "metrics": {
+        "roc_auc": 0.6993779042813555,
+        "precision": 0.18335901386748846,
+        "recall": 0.9224806201550387,
+        "f1": 0.3059125964010283,
+        "confusion_matrix": [
+          [
+            189,
+            530
+          ],
+          [
+            10,
+            119
+          ]
+        ],
+        "decision_threshold": 0.22
+      }
+    },
+    {
+      "config": "stable_96_32",
+      "metrics": {
+        "roc_auc": 0.7033562980453041,
+        "precision": 0.17717717717717718,
+        "recall": 0.9147286821705426,
+        "f1": 0.2968553459119497,
+        "confusion_matrix": [
+          [
+            171,
+            548
+          ],
+          [
+            11,
+            118
+          ]
+        ],
+        "decision_threshold": 0.2
+      }
+    }
+  ],
+  "feature_importance": [
+    {
+      "feature": "age",
+      "importance_mean": 0.0343513816562625,
+      "importance_std": 0.006354053930081741
+    },
+    {
+      "feature": "cholAgeRatio",
+      "importance_mean": 0.011816584187771609,
+      "importance_std": 0.005230887788522837
+    },
+    {
+      "feature": "cigsPerDay",
+      "importance_mean": 0.010603659259738454,
+      "importance_std": 0.0033513427685744617
+    },
+    {
+      "feature": "male",
+      "importance_mean": 0.009653534732779134,
+      "importance_std": 0.0027508442648059824
+    },
+    {
+      "feature": "smokingAgeInteraction",
+      "importance_mean": 0.008402874362540572,
+      "importance_std": 0.0033494733121232764
+    },
+    {
+      "feature": "sysBpBmiInteraction",
+      "importance_mean": 0.0069790352664661215,
+      "importance_std": 0.00662665084298884
+    },
+    {
+      "feature": "diaBP",
+      "importance_mean": 0.006873241258854329,
+      "importance_std": 0.006478181068368832
+    },
+    {
+      "feature": "totChol",
+      "importance_mean": 0.005603713167513083,
+      "importance_std": 0.006575824379369365
+    },
+    {
+      "feature": "sysBP",
+      "importance_mean": 0.005021509202057142,
+      "importance_std": 0.0035728645968204466
+    },
+    {
+      "feature": "pulsePressure",
+      "importance_mean": 0.004761404189712243,
+      "importance_std": 0.0024175093874629705
+    },
+    {
+      "feature": "bmiGlucoseInteraction",
+      "importance_mean": 0.003851710493687391,
+      "importance_std": 0.0029869370716839516
+    },
+    {
+      "feature": "heartRate",
+      "importance_mean": 0.0032937650267921698,
+      "importance_std": 0.0017606728128217752
+    },
+    {
+      "feature": "glucose",
+      "importance_mean": 0.003094306260848917,
+      "importance_std": 0.0012342172922765642
+    },
+    {
+      "feature": "education",
+      "importance_mean": 0.002498625351748232,
+      "importance_std": 0.0013934586229971376
+    },
+    {
+      "feature": "currentSmoker",
+      "importance_mean": 0.0011886664294724625,
+      "importance_std": 0.0018176175575941877
+    },
+    {
+      "feature": "BMI",
+      "importance_mean": 0.0008315274228849201,
+      "importance_std": 0.0022295243957643025
+    },
+    {
+      "feature": "prevalentHyp",
+      "importance_mean": 0.0007048441526236737,
+      "importance_std": 0.001847503177174229
+    },
+    {
+      "feature": "prevalentStroke",
+      "importance_mean": -8.35570505978156e-05,
+      "importance_std": 0.00013581657003531726
+    },
+    {
+      "feature": "diabetes",
+      "importance_mean": -8.490474496233857e-05,
+      "importance_std": 0.0008673195951892851
+    },
+    {
+      "feature": "BPMeds",
+      "importance_mean": -0.0003638774784099491,
+      "importance_std": 0.0005170300814517241
+    }
+  ],
+  "baseline_comparison": "Neural network performs better than logistic regression",
+  "conclusion": "Model needs improvement"
+}

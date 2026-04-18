@@ -1,0 +1,262 @@
+{
+  "best_config": {
+    "name": "wider_64_32",
+    "hidden1": 64,
+    "hidden2": 32,
+    "dropout": 0.25,
+    "lr": 0.0008,
+    "epochs": 140,
+    "batch_size": 32,
+    "pos_weight_scale": 1.1
+  },
+  "nn_metrics": {
+    "roc_auc": 0.9940476190476191,
+    "precision": 1.0,
+    "recall": 0.9285714285714286,
+    "f1": 0.9629629629629629,
+    "confusion_matrix": [
+      [
+        72,
+        0
+      ],
+      [
+        3,
+        39
+      ]
+    ],
+    "decision_threshold": 0.4200000000000001
+  },
+  "baseline_metrics": {
+    "roc_auc": 0.9953703703703703,
+    "precision": 0.975609756097561,
+    "recall": 0.9523809523809523,
+    "f1": 0.963855421686747,
+    "confusion_matrix": [
+      [
+        71,
+        1
+      ],
+      [
+        2,
+        40
+      ]
+    ],
+    "decision_threshold": 0.32
+  },
+  "experiment_results": [
+    {
+      "config": "base_32_16",
+      "metrics": {
+        "roc_auc": 0.9914021164021164,
+        "precision": 1.0,
+        "recall": 0.9285714285714286,
+        "f1": 0.9629629629629629,
+        "confusion_matrix": [
+          [
+            72,
+            0
+          ],
+          [
+            3,
+            39
+          ]
+        ],
+        "decision_threshold": 0.4400000000000001
+      }
+    },
+    {
+      "config": "wider_64_32",
+      "metrics": {
+        "roc_auc": 0.9940476190476191,
+        "precision": 1.0,
+        "recall": 0.9285714285714286,
+        "f1": 0.9629629629629629,
+        "confusion_matrix": [
+          [
+            72,
+            0
+          ],
+          [
+            3,
+            39
+          ]
+        ],
+        "decision_threshold": 0.4200000000000001
+      }
+    },
+    {
+      "config": "compact_48_16",
+      "metrics": {
+        "roc_auc": 0.9857804232804233,
+        "precision": 1.0,
+        "recall": 0.9285714285714286,
+        "f1": 0.9629629629629629,
+        "confusion_matrix": [
+          [
+            72,
+            0
+          ],
+          [
+            3,
+            39
+          ]
+        ],
+        "decision_threshold": 0.6200000000000003
+      }
+    }
+  ],
+  "feature_importance": [
+    {
+      "feature": "concavity_worst",
+      "importance_mean": 0.02616567460317465,
+      "importance_std": 0.005211449003002087
+    },
+    {
+      "feature": "symmetry_worst",
+      "importance_mean": 0.017815806878306917,
+      "importance_std": 0.0029458954700060705
+    },
+    {
+      "feature": "texture_worst",
+      "importance_mean": 0.016906415343915335,
+      "importance_std": 0.00631872864904467
+    },
+    {
+      "feature": "concavity_mean",
+      "importance_mean": 0.009507275132275173,
+      "importance_std": 0.004967889942980684
+    },
+    {
+      "feature": "area_worst",
+      "importance_mean": 0.009217923280423354,
+      "importance_std": 0.00468375128884011
+    },
+    {
+      "feature": "concave points_worst",
+      "importance_mean": 0.008101851851851888,
+      "importance_std": 0.004327464394279894
+    },
+    {
+      "feature": "smoothness_worst",
+      "importance_mean": 0.007068452380952411,
+      "importance_std": 0.002887311464136959
+    },
+    {
+      "feature": "radius_worst",
+      "importance_mean": 0.006655092592592615,
+      "importance_std": 0.00393170134736016
+    },
+    {
+      "feature": "concave points_mean",
+      "importance_mean": 0.0053323412698412925,
+      "importance_std": 0.0034264010971313606
+    },
+    {
+      "feature": "perimeter_worst",
+      "importance_mean": 0.004546957671957674,
+      "importance_std": 0.002581431050925288
+    },
+    {
+      "feature": "area_se",
+      "importance_mean": 0.0027281746031746212,
+      "importance_std": 0.002565496139084509
+    },
+    {
+      "feature": "perimeter_mean",
+      "importance_mean": 0.0026455026455026454,
+      "importance_std": 0.0021109697974212843
+    },
+    {
+      "feature": "concave points_se",
+      "importance_mean": 0.0020667989417989946,
+      "importance_std": 0.002283602400286538
+    },
+    {
+      "feature": "fractal_dimension_worst",
+      "importance_mean": 0.0017774470899471068,
+      "importance_std": 0.0007382841889671068
+    },
+    {
+      "feature": "smoothness_se",
+      "importance_mean": 0.0017774470899470374,
+      "importance_std": 0.0015327791185300312
+    },
+    {
+      "feature": "area_mean",
+      "importance_mean": 0.0012814153439153486,
+      "importance_std": 0.0011022066489726665
+    },
+    {
+      "feature": "smoothness_mean",
+      "importance_mean": 0.0011987433862434005,
+      "importance_std": 0.0015148381449908025
+    },
+    {
+      "feature": "symmetry_se",
+      "importance_mean": 0.0010333994708994765,
+      "importance_std": 0.0009561039605010034
+    },
+    {
+      "feature": "radius_se",
+      "importance_mean": 0.0008680555555555802,
+      "importance_std": 0.0027515607210057704
+    },
+    {
+      "feature": "radius_mean",
+      "importance_mean": 0.0007853835978836321,
+      "importance_std": 0.0008894442291397923
+    },
+    {
+      "feature": "texture_mean",
+      "importance_mean": 0.0006200396825396942,
+      "importance_std": 0.001784163513137182
+    },
+    {
+      "feature": "perimeter_se",
+      "importance_mean": 0.0006200396825396942,
+      "importance_std": 0.001980247944279644
+    },
+    {
+      "feature": "compactness_se",
+      "importance_mean": 0.0002066798941798842,
+      "importance_std": 0.0019063909652116933
+    },
+    {
+      "feature": "fractal_dimension_se",
+      "importance_mean": -0.00016534391534389625,
+      "importance_std": 0.0012913772612279735
+    },
+    {
+      "feature": "symmetry_mean",
+      "importance_mean": -0.0003720238095238221,
+      "importance_std": 0.00041951436694327504
+    },
+    {
+      "feature": "fractal_dimension_mean",
+      "importance_mean": -0.0005373677248677183,
+      "importance_std": 0.0007195310509891405
+    },
+    {
+      "feature": "concavity_se",
+      "importance_mean": -0.0008267195767195645,
+      "importance_std": 0.0002863840620980597
+    },
+    {
+      "feature": "compactness_worst",
+      "importance_mean": -0.0010333994708994487,
+      "importance_std": 0.0003065558237060309
+    },
+    {
+      "feature": "compactness_mean",
+      "importance_mean": -0.0014467592592592449,
+      "importance_std": 0.0006390387249396809
+    },
+    {
+      "feature": "texture_se",
+      "importance_mean": -0.0014880952380951912,
+      "importance_std": 0.0010715510414033844
+    }
+  ],
+  "baseline_comparison": "Logistic regression performs better than neural network",
+  "conclusion": "Model is acceptable"
+}
